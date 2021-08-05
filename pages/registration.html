@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Регистрация</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+
+<body>
+  <h1>Регистрация</h1>
+
+  <div>
+    <ul>
+      <li><a href="../index.html">Главная</a></li>
+      <li><a href="articles.html">Статьи</a></li>
+      <li><a href="catalog.html">Каталог</a></li>
+      <li><a href="contacts.html">Контакты</a></li>
+      <li><a href="gallery.html">Галерея</a></li>
+      <li><a href="page-nav.html">Навигация</a></li>
+      <li><a href="registration.html">Регистрация</a></li>
+    </ul>
+  </div>
+
+  <form action="url" method="GET">
+    <fieldset>
+      <legend>#1 Базовые поля</legend>
+      <div>
+        <label for="fam">Фамилия</label>
+        <input name="lgn" id="fam" type="text" placeholder="Введите логин" value="Фамилия">
+      </div>
+      <div>
+        <label for="name">Имя</label>
+        <input name="lgn" id="name" type="text" placeholder="Введите логин" value="Имя">
+      </div>
+      <div>
+        <label for="soname">Отчество</label>
+        <input name="lgn" id="soname" type="text" placeholder="Введите логин" value="Отчество">
+      </div>
+      <div>
+        <label for="file">Фотография</label>
+        <input name="file" id="file" type="file">
+      </div>
+      <div>
+        <label for="email">Имейл</label>
+        <input name="email" id="email" type="email" placeholder="Введите имейл">
+      </div>
+      <div>
+        <label for="passw">Пароль</label>
+        <input name="psw" id="passw" type="password" placeholder="Введите пароль" minlength="3" maxlength="12">
+      </div>
+      <div>
+        <label for="passw">Адресс сайта</label>
+        <input type="url" placeholder="Сайт" name="site">
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>#3 Единственный выбор</legend>
+      <p>Укажите ваш пол</p>
+      <div>
+        <input value="gender-male" id="gender-male" type="radio" name="gender">
+        <label for="gender-male">Мужской</label>
+      </div>
+      <div>
+        <input value="gender-female" id="gender-female" type="radio" name="gender">
+        <label for="gender-female">Женский</label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>#4 Открывающийся список</legend>
+      <div>
+        <label for="list">Дата рождения</label>
+        <select name="list" id="list">
+          <option selected disabled value="">Выберите год</option>
+          <option value="2000">2000</option>
+          <option value="2001">2002</option>
+          <option value="2003">2003</option>
+          <option value="2004">2004</option>
+          <option value="2005">2005</option>
+          <option value="2006">2006</option>
+          <option value="2007">2007</option>
+          <option value="2008">2008</option>
+          <option value="2009">2009</option>
+          <option value="2010">2010</option>
+          <option value="2011">2011</option>
+        </select>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>#2 Множественный выбор</legend>
+      <p>Выберите предпочитаемую вами кухню</p>
+      <div>
+        <input checked name="kit" value="ua" id="ua" type="checkbox">
+        <label for="ua">Украинская</label>
+      </div>
+      <div>
+        <input name="kit" value="gr" id="gr" type="checkbox">
+        <label for="gr">Грузинская</label>
+      </div>
+      <div>
+        <input name="kit" value="it" id="it" type="checkbox">
+        <label for="it">Итальянская</label>
+      </div>
+      <div>
+        <input name="kit" value="bl" id="bl" type="checkbox">
+        <label for="bl">Белорусская</label>
+      </div>
+      <div>
+        <input name="kit" value="md" id="md" type="checkbox">
+        <label for="md">Молдавская</label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>#5 Многострочный текст</legend>
+
+      <div>
+        <label for="multitext">Напишите о себе</label>
+        <textarea name="txt" id="multitext" cols="40" rows="7" placeholder="Введите подробную информацию..."></textarea>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>#6 Управление формой</legend>
+      <div>
+        <input type="submit" value="Регистрация">
+        <input type="reset" value="Сбросить">
+      </div>
+
+    </fieldset>
+  </form>
+
+  <footer>
+    <div>&copy; Aleksandr Ostapenko</div>
+  </footer>
+</body>
+
+</html>

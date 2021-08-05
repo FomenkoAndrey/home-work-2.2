@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Контакты</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+
+<body>
+  <h1>Контакты</h1>
+  <div>
+    <ul>
+      <li><a href="../index.html">Главная</a></li>
+      <li><a href="articles.html">Статьи</a></li>
+      <li><a href="catalog.html">Каталог</a></li>
+      <li><a href="contacts.html">Контакты</a></li>
+      <li><a href="gallery.html">Галерея</a></li>
+      <li><a href="page-nav.html">Навигация</a></li>
+      <li><a href="registration.html">Регистрация</a></li>
+    </ul>
+  </div>
+  <hr>
+
+  <div>
+    <div>
+      <h2>Адрес</h2>
+      <p>г.Запорожье<br>
+        проспект Соборний, 147, <br>
+        Запоріжжя, Запорізька область, 69000<br>
+        3 этаж, оф. 303</p>
+    </div>
+    <hr>
+
+    <div>
+      <h2>Наше расположение</h2>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d43984.736151732126!2d35.125661791800326!3d47.83671912498135!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dc6733f05c7f41%3A0x34c77dc7e5bb22b1!2z0KLQpiDQo9C60YDQsNC40L3QsA!5e0!3m2!1sru!2sua!4v1627926185959!5m2!1sru!2sua"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    <hr>
+  </div>
+
+  <div>
+    <h2>Свяжитесь с нами</h2>
+    <fieldset>
+      <legend>Форма обратной связи</legend>
+      <form action="feedback.url" method="GET">
+        <div>
+          <label for="name">Имя</label>
+          <input id="name" name="name" type="text" placeholder="Введите имя" autofocus>
+        </div>
+        <div>
+          <label for="phone">Контактный телефон:</label>
+          <input id="phone" name="phone" type="tel" pattern="380-[0-9]{5}-[0-9]{4}" placeholder="Ваш номер телефона">
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input id="email" name="email" type="email" placeholder="Ваш e-mail">
+        </div>
+        <div>
+          <label for="txt">Вопрос:</label>
+          <textarea id="txt" name="question" cols="40" rows="7" placeholder="Задайте нам свой вопрос"></textarea>
+        </div>
+        <div>
+          <button type="submit">Отправить</button>
+        </div>
+      </form>
+    </fieldset>
+  </div>
+
+  <footer>
+    <div>&copy; Aleksandr Ostapenko</div>
+  </footer>
+</body>
+
+</html>
