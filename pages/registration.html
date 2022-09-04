@@ -24,14 +24,21 @@
   </ul>
 </div>
 
-<form action="url" method="GET">
+<form action="https://tests.fomenko.top/echo/index.php" method="GET">
+  <!--создаем группы с помощью fieldset-->
   <fieldset>
+    <!--добавляем описание группы с помощью legend-->
     <legend>#1 Базовые поля</legend>
 
+    <!--группируем элементы каждого поля в div-->
     <div>
+      <!--подписываем поле только тегом label-->
       <label for="fam">Фамилия</label>
+      <!--связываем поле с меткой и настраиваем его-->
       <input id="fam" name="lgn" placeholder="Введите логин" type="text" value="Фамилия">
     </div>
+    
+    <!--такие действия и структуры должны быть применены к любому полю, без исключения-->
     <div>
       <label for="name">Имя</label>
       <input id="name" name="lgn" placeholder="Введите логин" type="text" value="Имя">
@@ -45,16 +52,16 @@
       <input id="file" name="file" type="file">
     </div>
     <div>
-      <label for="email">Имейл</label>
-      <input id="email" name="email" placeholder="Введите имейл" type="email">
+      <label for="email">Email</label>
+      <input id="email" name="email" placeholder="Введите Email" type="email">
     </div>
     <div>
-      <label for="passw">Пароль</label>
-      <input id="passw" maxlength="12" minlength="3" name="psw" placeholder="Введите пароль" type="password">
+      <label for="password">Пароль</label>
+      <input id="password" maxlength="12" minlength="3" name="psw" placeholder="Введите пароль" type="password">
     </div>
     <div>
-      <label for="passw">Адресс сайта</label>
-      <input name="site" placeholder="Сайт" type="url">
+      <label for="site">Адрес сайта</label>
+      <input id="site" name="site" placeholder="Сайт" type="url">
     </div>
   </fieldset>
 
@@ -126,14 +133,14 @@
     <legend>#5 Многострочный текст</legend>
 
     <div>
-      <label for="multitext">Напишите о себе</label>
-      <textarea cols="40" id="multitext" name="txt" placeholder="Введите подробную информацию..." rows="7"></textarea>
+      <label for="txt">Напишите о себе</label>
+      <textarea cols="40" id="txt" name="txt" placeholder="Введите подробную информацию..." rows="7"></textarea>
     </div>
   </fieldset>
 
   <fieldset>
     <legend>#6 Управление формой</legend>
-    
+
     <div>
       <input type="submit" value="Регистрация">
       <input type="reset" value="Сбросить">
